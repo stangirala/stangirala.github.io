@@ -1,8 +1,0 @@
-/* Inspired by https://github.com/altercation/ethanschoonover.com/blob/master/resources/css/style.css */
-
-* { font-family: 'Ubuntu Mono', sans-serif; }
-h1 { text-align: center; font-size: 35pt; }
-h2 { font-size: 12pt; }
-body { text-align: center; background-color: #073642; color: #93a1a1; }
-a, a:active, a:visited { color: #607890; }
-a:hover { color: #036; }
