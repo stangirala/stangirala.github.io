@@ -1,0 +1,58 @@
+<html>
+    <head>
+    </head>
+<body>
+    <style>
+        body {
+            background-color: #f9f9f9;
+        }
+
+        #video {
+          position: fixed;
+          right: 0;
+          bottom: 0;
+          min-width: 80%;
+          min-height: 80%;
+        }
+
+        #control-button {
+            position: fixed;
+            top: 100;
+            min-width: 5%;
+            min-height: 5%;
+        }
+    </style>
+
+    <p> just hit play </p>
+
+    <video id="video" width="320" height="240" loop muted>
+        <source src="lofi1.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <audio id="audio" mediagroup="playback">
+        <source src="lofi_one.webm" type="audio/webm">
+    </audio>
+
+    <button id="control-button" onclick="playClick()">pLay</button>
+
+    <script>
+      function playClick() {
+          if (video.paused) {
+              value = "Stop";
+          } else {
+              value = "pLay";
+          }
+          document.getElementById("control-button").innerText = value;
+
+          if (video.paused) {
+            document.getElementById("audio").play();
+            document.getElementById("video").play();
+          } else {
+            document.getElementById("audio").pause();
+            document.getElementById("video").pause();
+          }
+      }
+    </script>
+</body>
+</html>
